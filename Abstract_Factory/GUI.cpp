@@ -15,3 +15,11 @@ void DarkDialog::display() const {
 void LightDialog::display() const {
 	std::cout << "LightDialog displayed!" << std::endl;
 }
+
+void PinkButton::display() const {
+	std::cout << "PinkButton displayed!" << std::endl;
+}
+
+void PinkDialog::display() const {
+	std::cout << "PinkDialog displayed!" << std::endl;
+}

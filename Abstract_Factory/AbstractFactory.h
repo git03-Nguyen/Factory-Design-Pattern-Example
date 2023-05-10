@@ -19,3 +19,9 @@ public:
 	GUI* createDialog() const;
 };
 
+class PinkThemeFactory : public AbstractFactory {
+public:
+	GUI* createButton() const;
+	GUI* createDialog() const;
+};
+

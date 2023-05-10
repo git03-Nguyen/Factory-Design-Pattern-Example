@@ -16,3 +16,10 @@ GUI* LightThemeFactory::createDialog() const {
     return new (std::nothrow) LightDialog;
 }
 
+GUI* PinkThemeFactory::createButton() const {
+    return new (std::nothrow) PinkButton;
+}
+
+GUI* PinkThemeFactory::createDialog() const {
+    return new (std::nothrow) PinkDialog;
+}

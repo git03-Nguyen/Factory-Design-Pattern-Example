@@ -26,6 +26,20 @@ int main() {
 		delete gui1, gui2, factory;
 	}
 
+	// With Abstract Factory, we can easily increase/decrease the number of item groups.
+		// For example, we can add a PinkTheme to this application 
+		// JUST by writing PinkThemeFactory -> AbstractFactory and PinkButton -> Button, PinkDialog -> Dialog
+		// without adjusting the old codes.
+	std::cout << "User choose pink theme: " << std::endl;
+	factory = new PinkThemeFactory;
+	GUI* gui1 = factory->createButton();
+	if (gui1) gui1->display();
+
+	GUI* gui2 = factory->createDialog();
+	if (gui2) gui2->display();
+
+	delete gui1, gui2, factory;
+
 	system("PAUSE");
 	return 0;
 }

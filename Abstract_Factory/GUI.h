@@ -26,6 +26,11 @@ public:
 	void display() const;
 };
 
+class PinkButton : public Button {
+public: 
+	void display() const;
+};
+
 class DarkDialog : public Button {
 public:
 	void display() const;
@@ -33,5 +38,10 @@ public:
 
 class LightDialog : public Button {
 public:
+	void display() const;
+};
+
+class PinkDialog :public Dialog {
+public: 
 	void display() const;
 };
